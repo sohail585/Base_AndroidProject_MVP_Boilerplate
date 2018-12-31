@@ -34,7 +34,12 @@ It uses com.android.support:design to support recyclerView, snackbars, and etc.
 # How to use:
 
 1. clone the project.
-2. Change the package name.
+2. Change the package name. :
+
+  Note :
+  
+  If you face any problems after renaming the package, Please refer this link : https://stackoverflow.com/questions/26888762/after-renaming-package-name-in-android-studio-launching-error-runtime-error
+  
 3. Make sure you create new modules under "modules" package(As of now, in this project, there is a module by the name "main" - which simply means main module).
 4. All the modules must have contract, interactor, presenter, model, view packages.
   i). contract package will have an interface which in turn will have 3 other interfaces bundled in it, namely, View, Presenter, Interactor. All interfaces have to be extended from its base.
