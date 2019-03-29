@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.thbs.mis.baseboilerplateandroid"
+        applicationId "com.thbs.baseboilerplateandroid"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -39,9 +39,6 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
     implementation 'io.reactivex.rxjava2:rxjava:2.1.14-RC1'
     implementation 'com.squareup.retrofit2:converter-simplexml:2.4.0'
-    compile('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {
-        transitive = true
-    }
 
 
     //Piccasso
@@ -58,7 +55,7 @@ dependencies {
     implementation "android.arch.persistence.room:rxjava2:$rootProject.roomVersion"
 
     //Crashlytics - To report crashes that happens anywhere in the production directly to your email Id
-    compile('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {
+   /* compile('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {
         transitive = true
-    }
+    }*/
 }
