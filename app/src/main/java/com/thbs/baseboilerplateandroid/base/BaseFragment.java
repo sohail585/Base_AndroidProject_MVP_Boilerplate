@@ -34,7 +34,9 @@ public abstract class BaseFragment extends Fragment {
         this.progressDialog = new ProgressDialog(getActivity());
     }
 
-    public abstract int getLayout();
+    protected abstract int getLayout();
+    protected abstract void setListeners();
+    protected abstract void initViews();
 
     public void showShortToast(String message) {
         if (isAdded()) {

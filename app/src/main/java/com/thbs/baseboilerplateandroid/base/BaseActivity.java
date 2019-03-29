@@ -39,6 +39,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     protected abstract int getLayout();
+    protected abstract void setListeners();
+    protected abstract void initViews();
 
     protected void showShortToast(String message) {
         if(isActivityActive) {

@@ -33,6 +33,11 @@ public class MainActivity extends BaseActivity implements MainActivityContract.V
     }
 
     @Override
+    protected void setListeners() {
+
+    }
+
+    @Override
     public void setUpPresenter() {
         mainPresenter = new MainPresenter();
         setPresenter(mainPresenter);
